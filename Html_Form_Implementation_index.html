@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Implementation</title>
+    <style> 
+    </style>
+</head>
+<body>
+    <header>
+        <h3> User Registration Form</h3>
+           </header>
+        <form>
+        <h4>Personal Information</h4>
+                <label for="First Name">First Name:</label>
+        <input type="text" id="First Name" name="First Name">
+        <br> <br>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="Last Name" name="First Name">
+        <br><br>
+        <label for="Date of Birth">Date of Birth:</label>
+        <input type="date" id="Date of Birth" name="Date of Birth">
+        <br><br>
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age">
+        <br><br>
+        <label for="Gender">Gender:</label> <Br>
+        <label> 
+        <input type="radio" name="Gender" value="Male"> Male 
+        <br>
+         </label> 
+         <label>
+            <input type="radio" name="Gender" value="Female"> Female
+         </label>
+         <br> <br>
+         <label for="Profile Photo">Profile Photo:</label>
+         <input type="file" id="Choose file" name="Profile Photo"> 
+         <br> <br>
+         <h4>Contact & Address Information</h4>
+         <label for="Email Address">Email Address:</label>
+         <input type="text" id="Email Address" name="Email Address">
+         <br> <br>
+         <label for="Phone Number">Phone Number:</label>
+         <input type="tel" id="Phone Number" name="Phone Number">
+         <br> <br>
+         <label for="Personal Website">Personal Website:</label>
+         <input type="url" id="Personal Website" name="Personal Website" placeholder="https//example.com" required> 
+         <br> <br>
+         <label for="Street Address">Street Address:</label>
+         <input type="text" id="Street Address" name="Street Address">
+         <br> <br>
+         <label for="City">City:</label>
+         <input type="text" id="City" name="City" required>
+         <br> <br>
+         <label for="Country">Country:</label>
+         <select id="Country" name="Country" required>
+            <option value="">Select Country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="USA">USA</option>
+            <option value="Ghana">Ghana</option>
+            <option value="united-states">United States</option>
+            <option value="united-kingdom">United Kingdom</option>
+         </select>
+        <br><br>
+        <label for="Zip/Postal Code">Zip/Postal Code:</label>
+        <input type="text" id="Zip/Postal Code" name="Zip/Postal Code">
+        <br> <br>
+        <label for="Prefered Contact Time">Prefered Contact Time:</label>
+        <input type="time" id="Prefered Contact Time" name="Prefered Contact Time">
+        <br><br>
+        <h4>Preferences & Interests</h4>
+        <label for="Favorite Color">Favorite Color:</label>
+        <input type="color" id="Favorite Color " name="Favorite Color">
+        <br> <br>
+        <label for="Experience Level">Experience Level (1-10):</label>
+        <progress value="1" max="10"></progress>
+        <br> <br>
+        <label for="Birth Month">Birth Month</label>
+        <input type="month" id="Birth Month" name="Birth Month">
+        <br> <br>
+        <label for="Available Week">Available Week:</label>
+        <input type="week" id="Available Week" name="Available Week">
+        <br> <br>
+        <label for="Search Keywords">Search Keywords</label>
+        <input type="text" id="Search Keywords" name="Search Keywords" placeholder="Enter Keywords...">
+        <br>
+        <h4>Interests (Select all that apply)</h4>
+        <label>
+            <input type="checkbox" name="Technology" value="Technology">
+            Technology
+        </label><br>
 
+        <label>
+            <input type="checkbox" name="Sports" value="Sports"> Sports
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="Music" value="Music"> Music
+        </label> <br>
+        <label>
+            <input type="checkbox" name="Travel" value="Travel"> Travel
+        </label> <br>
+        <label>
+            <input type="checkbox" name="Reading" value="Reading"> Reading
+        </label> <br>
+        <label>
+            <input type="checkbox" name="Cooking" value="Cooking"> Cooking
+        </label> <br>
+        <h4>Feedback & Additional Information</h4>
+        <label for="Tell us about Yourself">Tell us about Yourself:</label> <br>
+        <input type="text" style="width: 400px; height: 50px; padding: 10px;" id="Tell us about Yourself" name="Tell us about Yourself" placeholder="Write a brief description about yourself..." required>
+        <br>    <br>
+    <label for="Suggestion for improvement">Suggestion for improvement:</label> <br>
+     <input type="text" style="width: 400px; height: 50px; padding: 10px;" id="Suggestion for improvement" name="Suggestion for improvement" placeholder="Any suggestion or feedback">
+    <br>
+       <br> <br>
+    <label for="Registration Date & Time">Registration Date & Time</label>
+    <input type="date" id="Registration Date & Time" name="Registration Date & Time">
+    <br> <br>
+    <label for="How did you hear about us">How did you hear about us?</label>
+    <select name="How did you hear about us" id="How did you hear about us">
+            <option value="">Select Source</option>
+    <option value="Online">Online</option>
+    <option value="Friend/Family">Friend/Family</option>
+    <option value="Posters">Posters</option>
+</select>
+<br> <br>
+<label for="Upload Resume (Optional)">Upload Resume (Optional):</label>
+<input type="file" id="Upload Resume (Optional)" name="Upload Resume (Optional)"> <br> <br>
+<label>
+    <input type="checkbox" id="Subscribe to our newsletter" name="Subscribe to our newsletter"> Subscribe to our newsletter <br> <br>
+    <input type="checkbox" id="I agree to the Terms and Conditions" name="I agree to the Terms and Conditions"> I agree to the Terms and Conditions <br> <br>
+    <input type="checkbox" id="I agree to the Privacy Policy" name="I agree to the Privacy Policy"> Subscribe to our newsletter
+</label> 
+<br><br>
+<!-- Register Button -->
+  <button type="submit">Register</button>
+  <button type="submit">Clear Form</button>
+  
+</body>
+</html>
