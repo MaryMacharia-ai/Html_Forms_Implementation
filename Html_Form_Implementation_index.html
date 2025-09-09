@@ -85,11 +85,11 @@
         <input type="text" id="Zip/Postal-Code" name="Zip/Postal-Code" />
         <br>
         <br>
-        <label for="Preferred-Contact-Time">Preferred Contact Time:</label>
+        <label for="Prefered-Contact-Time">Prefered Contact Time:</label>
         <input
           type="time"
-          id="Preferred-Contact-Time"
-          name="Preferred-Contact-Time"
+          id="Prefered-Contact-Time"
+          name="Prefered-Contact-Time"
         />
       </fieldset>
         <br><br>
@@ -124,15 +124,12 @@
           name="Search-Keywords"
           placeholder="Enter Keywords..."
         />
-      </fieldset>
-      <br>
-      <br>
-      <fieldset>
-        <legend>Interests (Select all that apply)</legend>
+        <br> <br>
+        <label for ="Interests-Select-all-that-apply"> Interests (Select all that apply):</label>
+        <input type="text" id="Interests-Select-all-that-apply" name="Interests-Select-all-that-apply" />
         <label>
-          <input type="checkbox" name="Technology" value="Technology" />
-          Technology </label
-        ><br>
+            <br>
+          <input type="checkbox" name="Technology" value="Technology" />Technology </label> <br>
         <label>
           <input type="checkbox" name="Sports" value="Sports" /> Sports
         </label>
@@ -153,15 +150,29 @@
           <input type="checkbox" name="Cooking" value="Cooking" /> Cooking
         </label>
         <br>
-      </fieldset>
+        <br>
+        <label for="EducationLevel">EducationLevel</label>
+          <select id="EducationLevel" name="EducationLevel" required>
+          <option value="">Select Education Level</option>
+          <option value="High School">High School</option>
+          <option value="College or University">College or University</option>
+          <option value="Postdoctoral">Postdoctoral</option> </select>
+        <br> <br>
+        <label for="CreatePassword">Create Password:</label>
+        <input type="text" id="CreatePassword" name="CreatePassword"/>
+        <br>
+        <br>
+        <label for="ConfirmPassword">Confirm Password:</label>
+        <input type="text" id="ConfirmPassword" name="ConfirmPassword"/>
+        <br>
+     </fieldset>
       <br>
       <br>
       <fieldset>
         <legend>Feedback & Additional Information</legend>
         <label for="Tell-us-about-Yourself">Tell us about Yourself:</label>
         <br>
-
-        <textarea
+         <textarea
           id="Tell-us-about-Yourself"
           name="Tell-us-about-Yourself"
           placeholder="Write a brief description about yourself..."
@@ -210,10 +221,10 @@
         <br>
         <br>
         <label>
-          <input type="checkbox" id="Subscribe-to-our-newsletter" name="Subscribe-to-our-newsletter"/> Subscribe to our newsletter <br>
-          <br>
-          <input type="checkbox" id="I-agree-to-the-Terms-and-Condition" name="I-agree-to-the-Terms-and-Conditions" /> I agree to the Terms and Conditions <br>
-          <br>
+          <input type="checkbox" id="Subscribe-to-our-newsletter" name="Subscribe-to-our-newsletter"/> Subscribe to our newsletter
+          <br><br>
+          <input type="checkbox" id="I-agree-to-the-Terms-and-Condition" name="I-agree-to-the-Terms-and-Conditions" /> I agree to the Terms and Conditions
+          <br><br>
           <input type="checkbox" id="I-agree-to-the-Privacy-Policy" name="I-agree-to-the-Privacy-Policy"/> I agree to the Privacy Policy
         </label>
       </fieldset>
