@@ -1,111 +1,108 @@
 # Html_Forms_Implementation
+
 This is my first HTML form implementation based on given outlined structure
-# Purpose of the form and its sections
-It is a user registration form for the specific firm to gather information concerning the user of their services.
 
-The first section requests for the user personal information (First Name, Last Name,Date of Birth, Age, Gender and Profile Photo.
+## Purpose of the form and its sections
 
-The Second section requests user's contact and address information (Email Address, Phone Number, Personal Website, Street Address, City, Country, Zip/Postal Code, and Preferred Contact Time).
+* It is a user registration form for the specific firm to gather information concerning the user of their services.
 
-The third section request for the user's Preferences and Interests (Favorite Color, Experience Level, Birth Month, Available Week and Search Keywords).
+* The first section requests for the user personal information (First Name, Last Name,Date of Birth, Age, Gender and Profile Photo.
 
-The forth section is for Feedback & Additional Information (Tell us about Yourself, Suggestion for improvement, Registration Date & Time, How did you hear about us?, Upload Resume (Optional), Subscribe to our newsletter, I agree to the Terms and Conditions, and I agree to the Privacy Policy).
+* The Second section requests user's contact and address information (Email Address, Phone Number, Personal Website, Street Address, City, Country, Zip/Postal Code, and Preferred Contact Time).
 
-Finally, there is the fifth section for user to;
+* The third section request for the user's Preferences and Interests (Favorite Color, Experience Level, Birth Month, Available Week and Search Keywords).
 
-Submit registration through "Register" button after successfully completion of the form. 
+* The forth section is for Feedback & Additional Information (Tell us about Yourself, Suggestion for improvement, Registration Date & Time, How did you hear about us?, Upload Resume (Optional), Subscribe to our newsletter, I agree to the Terms and Conditions, and I agree to the Privacy Policy).
 
-Clear Form using a reset button that allows one to start over or remove all written sections automatically. 
-# File structure explanation
-used <!DOCTYPE html> to that allows the browser to utilize HTML5 standards.
+* Finally, there is the fifth section for user to;
 
-Input a html lang="en" that indicates its a HTML root element that makes it for screen readers and search engines
+* Submit registration through "Register" button after successfully completion of the form. 
 
-used head section to contain the metadata:
+* Clear Form using a reset button that allows one to start over or remove all written sections automatically. 
 
-meta charset="UTF-8" - for appropriate character encoding.
+## File structure explanation
 
-meta name="viewport"... - to ensure the page responds even on mobile.
+* used <!DOCTYPE html> to that allows the browser to utilize HTML5 standards.
 
-<title> - Sets the browser tab title.
+* Input a html lang="en" that indicates its a HTML root element that makes it for screen readers and search engines
 
-<style> - To document styles
+* Used head section to contain the metadata:
 
-There is then the <body> that held every visible content.For example;
+* meta charset="UTF-8" - for appropriate character encoding.
+
+* meta name="viewport"... - to ensure the page responds even on mobile.
+
+* <title> - Sets the browser tab title.
+
+* <style> - To document styles
+
+* There is then the <body> that held every visible content. For example;
+
+  a.header section to display form title “User Registration Form”.
   
-a. <header> - displaying form title “User Registration Form”.
+  b.form section to serves as the primary container to collect user input.
   
-b. <form> - Serves as the primary container to collect user input.
+* The form is divided into 4 fieldset each with inputs mentioned in the form section mentioned above: 
+
+   i. <fieldset> -Personal Information
+
+  ii. <fieldset> - Contact & Address Information
+
+  iii. <fieldset> - Preferences & Interests
+
+  iv. <fieldset> - Feedback & Additional Information
+
+* Such structure also allow potential to add sections or fields while maintaining the layout.
   
-The form is divided into 4 fieldset each with inputs mentioned in the form section mentioned above: 
-  
-i. <fieldset> -Personal Information
-  
-ii. <fieldset> - Contact & Address Information
-  
-iii. <fieldset> - Preferences & Interests
-  
-iv. <fieldset> - Feedback & Additional Information
-  
-Finally, there is the 
+* Finally, there is the 
 
-  a. Form Buttons "submit" type that allows the user to send the form data.
+a. Form Buttons "submit" type that allows the user to send the form data.
 
-  b. Clear Form button that "reset" all fields to default.
+b. Clear Form button that "reset" all fields to default.
 
-# Implementation notes about your approach
-1. Semantic HTML for Accessibility
+## Implementation notes about your approach
 
-  I ensured use of html semantic tags like <form>, <fieldset>, <legend>, and <label> so that screen readers and assistive technologies can read and understand the form well.
+* I ensured use of html semantic tags like <form>, <fieldset>, <legend>, and <label> so that screen readers and assistive technologies can read and understand the form well.
 
-  I grouped the related inouts using <fieldset> to enhance visibility and accessibility for each section
+* I grouped the related using <fieldset> to enhance visibility and accessibility for each section.
 
-Personal Information
+* Applying multiple input types based on HTML5 such as date, text, password, color, range and email was to align each to the data collected and improve user experience when filling the form.
 
-Contact & Address Information
+* On areas that are mandatory, I put required to guide the user.
 
-Preferences & Interests
+* Using placeholder text is also to guide the users on data or information to enter.
 
-Feedback & Additional Information
+* Use of radion buttons and dropdowns was to minimize likely error in selecting choices.
 
-  Such structure also allow potential to add sections or fields while maintaining the layout
+* I also maintained consistent naming conventions for attributes; id and name to uphold consistency and boost readability.
 
-  Applying multiple input types based on HTML5 such as date, text, password, color, range and email was to align each to the data collected and improve user experience when filling the form.
+* Finally, I controlled the form by including 
 
-  On areas that are mandatory, I put required to guide the user.
+* A submit button labeled “Register” to send data.
 
-  Using placeholder text is also to guide the users on data or information to enter.
+* A reset button labeled “Clear Form” to allow users to start over easily.
 
-  use of radion buttons and dropdowns was to minimize likely error in selecting choices.
+* File uploads should be validated server-side to prevent malicious content.
 
-I also maintained consistent naming conventions for attributes; id and name to uphold consistency and boost readability.
+## How to use/view the form
 
-Finally, I controlled the form by including 
+- The form is opened directly on a browser through;
 
-A submit button labeled “Register” to send data.
+1. Saving the code into a form.html file:
 
-  A reset button labeled “Clear Form” to allow users to start over easily.
+2. Then double-click the form.html file or or right-click and choose "Open with" → your browser (Chrome, Edge, Firefox, etc.).
 
-  File uploads should be validated server-side to prevent malicious content.
+3. It will launch in your default browser and display the form.
 
-  # How to use/view the form
+## using the form
 
-  The form can be opened directly on a browser
+* Fill out the fields as guided
 
-  Save the code into a form.html file:
+* Upload files using the file inputs 
 
-Double-click the form.html file or or right-click and choose "Open with" → your browser (Chrome, Edge, Firefox, etc.).
+* Select options: Choosing from dropdowns, checkboxes, and radio buttons.
 
-It will launch in your default browser and display the form.
-
-# using the form
-Fill out the fields as guided
-
-Upload files using the file inputs 
-
-Select options: Choosing from dropdowns, checkboxes, and radio buttons.
-
-Submit: Click the Register button to send the form.
+* Submit: Click the Register button to send the form.
 
 Reset: Click Clear Form to remove all inputs and start fresh.
 
