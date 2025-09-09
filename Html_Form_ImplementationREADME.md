@@ -1,6 +1,6 @@
 # Html_Forms_Implementation
 
-This is my first HTML form implementation based on given outlined structure
+HTML form implementation based on given outlined structure
 
 ## Purpose of the form and its sections
 
@@ -28,9 +28,9 @@ This is my first HTML form implementation based on given outlined structure
 
 * Used head section to contain the metadata:
 
-* meta charset="UTF-8" - for appropriate character encoding.
+* meta charset="UTF-8" for appropriate character encoding.
 
-* meta name="viewport"... - to ensure the page responds even on mobile.
+* meta name="viewport"...  to ensure the page responds even on mobile.
 
 * <title> - Sets the browser tab title.
 
@@ -38,19 +38,19 @@ This is my first HTML form implementation based on given outlined structure
 
 * There is then the <body> that held every visible content. For example;
 
-  a.header section to display form title “User Registration Form”.
+  a. header section to display form title “User Registration Form”.
   
-  b.form section to serves as the primary container to collect user input.
+  b. form section to serves as the primary container to collect user input.
   
 * The form is divided into 4 fieldset each with inputs mentioned in the form section mentioned above: 
 
-   i. <fieldset> -Personal Information
+   i. Personal Information
 
-  ii. <fieldset> - Contact & Address Information
+  ii. Contact & Address Information
 
-  iii. <fieldset> - Preferences & Interests
+  iii. Preferences & Interests
 
-  iv. <fieldset> - Feedback & Additional Information
+  iv. Feedback & Additional Information
 
 * Such structure also allow potential to add sections or fields while maintaining the layout.
   
@@ -62,9 +62,9 @@ b. Clear Form button that "reset" all fields to default.
 
 ## Implementation notes about your approach
 
-* I ensured use of html semantic tags like <form>, <fieldset>, <legend>, and <label> so that screen readers and assistive technologies can read and understand the form well.
+* I ensured use of html semantic tags <> for form, fieldset, legend, and label for screen readers and assistive technologies to read and understand the form well.
 
-* I grouped the related using <fieldset> to enhance visibility and accessibility for each section.
+* I grouped the related using html tag for fieldset to enhance visibility and accessibility for each section.
 
 * Applying multiple input types based on HTML5 such as date, text, password, color, range and email was to align each to the data collected and improve user experience when filling the form.
 
@@ -72,19 +72,17 @@ b. Clear Form button that "reset" all fields to default.
 
 * Using placeholder text is also to guide the users on data or information to enter.
 
-* Use of radion buttons and dropdowns was to minimize likely error in selecting choices.
+* Use of radio buttons and dropdowns was to minimize likely error in selecting choices.
 
 * I also maintained consistent naming conventions for attributes; id and name to uphold consistency and boost readability.
 
 * Finally, I controlled the form by including 
 
-* A submit button labeled “Register” to send data.
-
-* A reset button labeled “Clear Form” to allow users to start over easily.
-
-* File uploads should be validated server-side to prevent malicious content.
+1. A submit button labeled “Register” to send data.
+2. A reset button labeled “Clear Form” to allow users to start over easily.
 
 ## How to use/view the form
+## Viewing the form
 
 - The form is opened directly on a browser through;
 
@@ -104,5 +102,5 @@ b. Clear Form button that "reset" all fields to default.
 
 * Submit: Click the Register button to send the form.
 
-Reset: Click Clear Form to remove all inputs and start fresh.
+* Reset: Click Clear Form to remove all inputs and start fresh.
 
