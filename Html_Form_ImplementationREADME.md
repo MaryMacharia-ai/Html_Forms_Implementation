@@ -9,11 +9,10 @@ The forth section is for Feedback & Additional Information (Tell us about Yourse
 Finally, there is the fifth section for user to submit your registration through "Register" button after successfully completion of the form. It also has a Clear Form reset button that allows one to start over or remove all written sections automatically. 
 # File structure explanation
 used <!DOCTYPE html> to that allows the browser to utilize HTML5 standards.
-Input a <html lang="en"> that indicates its a HTML root element that makes it for screen readers and search engines
-I have the 
-<head> that has the metadata:
-<meta charset="UTF-8">: for appropriate character encoding.
-<meta name="viewport"...>: to ensure the page responds even on mobile.
+Input a html lang="en" that indicates its a HTML root element that makes it for screen readers and search engines
+used head section to contain the metadata:
+meta charset="UTF-8" - for appropriate character encoding.
+meta name="viewport"... - to ensure the page responds even on mobile.
 <title> - Sets the browser tab title.
 <style> - To document styles
 There is then the <body> that held every visible content.
